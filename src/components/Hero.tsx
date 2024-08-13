@@ -5,8 +5,8 @@ import { CirclePlay } from "lucide-react";
 
 const Hero = () => {
   return (
-    <section className="b-2 max-container padding-container flex flex-col gap-20 py-10 pb-32 md:gap-28 lg:py-20 xl:flex-row">
-      <div className="hero-map"></div>
+    <section className="max-container padding-container flex flex-col gap-20 py-10 pb-32 md:gap-28 lg:py-20 xl:flex-row">
+      <div className="hero-map" />
       <div className="relative z-20 flex flex-1 flex-col xl:w-1/2">
         <Image
           src="/camp.svg"
@@ -34,40 +34,45 @@ const Hero = () => {
                   height={24}
                 />
               ))}
-            <p className="bold-16 lg:bold-20 text-blue-70"> 200k</p>
+          </div>
+
+          <p className="bold-16 lg:bold-20 text-blue-70">
+            {" "}
+            200k
             <span className="regular-16 lg:regular-20 ml-1">
               Excellent Reviews
             </span>
-          </div>
-
-          <div className="flex flex-col w-full gap-3 sm:flex-row">
-            <Button className="bg-green-500" title="Download App" />
-            <Button
-              className="bg-white text-zinc-900 "
-              title="How we work"
-              icon={<CirclePlay color="#16a34a" strokeWidth={1.5} />}
-            />
-          </div>
+          </p>
         </div>
 
-        <div className="relative flex flex-1 items-start ">
-          <div className="relative z-20 w-[268px] gap-8 rounded-3xl flex flex-col px-7 py-8 bg-green-90">
-            <div className="flex flex-col">
-              <div className="flexBetween">
-                <p className="regular-16 text-gray-20">Location</p>
-                <Image src="/close.svg" alt="close" width={24} height={24} />
-              </div>
-              <p className="bold-20 text-white">Aguas Calientes</p>
-            </div>
+        <div className="flex flex-col w-full gap-3 sm:flex-row">
+          <Button className="bg-green-500" title="Download App" />
+          <Button
+            className="bg-white text-zinc-900 "
+            title="How we work"
+            icon={<CirclePlay color="#16a34a" strokeWidth={1.5} />}
+          />
+        </div>
+      </div>
+
+      <div className="relative flex flex-1 items-start ">
+        <div className="relative z-20 w-[268px] gap-8 rounded-3xl flex flex-col px-7 py-8 bg-green-90">
+          <div className="flex flex-col">
             <div className="flexBetween">
-              <div className="flex flex-col">
-                <p className="regular-16 block text-gray-20">Distance</p>
-                <p className="bold-20 text-white">173.39 mi</p>
-              </div>
-              <div className="flex flex-col">
-                <p className="regular-16 block text-gray-20">Elevation</p>
-                <p className="bold-20 text-white">2.02 km</p>
-              </div>
+              <p className="regular-16 text-gray-20">Location</p>
+              <Image src="/close.svg" alt="close" width={24} height={24} />
+            </div>
+            <p className="bold-20 text-white">Aguas Calientes</p>
+          </div>
+
+          <div className="flexBetween">
+            <div className="flex flex-col">
+              <p className="regular-16 block text-gray-20">Distance</p>
+              <p className="bold-20 text-white">173.39 mi</p>
+            </div>
+            <div className="flex flex-col">
+              <p className="regular-16 block text-gray-20">Elevation</p>
+              <p className="bold-20 text-white">2.02 km</p>
             </div>
           </div>
         </div>
